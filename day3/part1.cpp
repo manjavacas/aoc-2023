@@ -7,10 +7,7 @@ using namespace std;
 
 struct Number
 {
-    int num;
-    int line;
-    int col;
-    int len;
+    int num, line, col, len;
     bool valid;
     Number(int num, int line, int col, int len, int valid) : num(num), line(line), col(col), len(len), valid(valid) {}
 };

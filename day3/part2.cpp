@@ -8,18 +8,14 @@ using namespace std;
 
 struct Number
 {
-    int num;
-    int line;
-    int col;
-    int len;
+    int num, line, col, len;
     bool valid;
     Number(int num, int line, int col, int len, int valid) : num(num), line(line), col(col), len(len), valid(valid) {}
 };
 
 struct Asterisk
 {
-    int line;
-    int col;
+    int line, col;
     set<int> numbers;
     Asterisk(int line, int col) : line(line), col(col) {}
 };
